@@ -1,0 +1,198 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,100';
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);
+.icon-logo {
+  background-image: url(../i/sprite.png);
+  background-position: 0px 0px;
+  width: 128px;
+  height: 50px; }
+
+.icon-paper-plane {
+  background-image: url(../i/sprite.png);
+  background-position: 0px -50px;
+  width: 25px;
+  height: 25px; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, html {
+  height: 100%; }
+
+body {
+  font: normal 16px/1.4 Roboto, Arial, sans-serif; }
+
+.wrapper {
+  width: 960px;
+  margin: auto; }
+
+.icon {
+  display: inline-block; }
+
+a {
+  text-decoration: none; }
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.c-btn {
+  color: #58e6da;
+  font-size: 16px;
+  padding: 9px 15px;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #58e6da;
+  border-radius: 2px;
+  display: inline-block; }
+
+.l-header-container {
+  background-image: url("../i/header-bg.png");
+  min-height: 670px; }
+  .l-header-container .l-header-top--logo {
+    padding-top: 20px; }
+  .l-header-container .l-navbar {
+    float: right;
+    padding-top: 35px;
+    font-weight: bold; }
+    .l-header-container .l-navbar .l-navbar--item {
+      display: inline; }
+      .l-header-container .l-navbar .l-navbar--item a {
+        font-size: 13px;
+        color: #fff;
+        margin-right: 25px; }
+      .l-header-container .l-navbar .l-navbar--item.active a {
+        color: #58e6da; }
+  .l-header-container .l-header-bottom {
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 150px; }
+    .l-header-container .l-header-bottom .divider {
+      display: inline-block;
+      width: 50px;
+      border-bottom: 1px solid  #58e6d5;
+      margin-bottom: 25px; }
+    .l-header-container .l-header-bottom .text-block-large {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      color: #fff;
+      margin-bottom: 20px; }
+    .l-header-container .l-header-bottom .text-block-small {
+      font-size: 14px;
+      font-weight: lighter;
+      color: #fff;
+      margin-bottom: 45px; }
+    .l-header-container .l-header-bottom .learn-more {
+      margin-bottom: 120px; }
+    .l-header-container .l-header-bottom .dots {
+      max-width: 60px;
+      max-height: 10px;
+      display: inline-block; }
+      .l-header-container .l-header-bottom .dots .dot {
+        float: left;
+        display: inline-block;
+        min-width: 8px;
+        min-height: 8px;
+        margin-right: 5px;
+        border: 1px solid white;
+        border-radius: 50%; }
+        .l-header-container .l-header-bottom .dots .dot.current {
+          background-color: #00e0d0; }
