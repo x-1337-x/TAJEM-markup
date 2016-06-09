@@ -47,15 +47,21 @@ The `sprites` mixin generates identical output to the CSS template
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);
 .icon-logo {
   background-image: url(../i/sprite.png);
-  background-position: 0px 0px;
+  background-position: -100px 0px;
   width: 128px;
   height: 50px; }
 
 .icon-paper-plane {
   background-image: url(../i/sprite.png);
-  background-position: 0px -50px;
+  background-position: -100px -50px;
   width: 25px;
   height: 25px; }
+
+.icon-play {
+  background-image: url(../i/sprite.png);
+  background-position: 0px 0px;
+  width: 100px;
+  height: 100px; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -120,12 +126,13 @@ body {
 a {
   text-decoration: none; }
 
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .l-our-story-container .inner-container:before,
+.clearfix:after,
+.l-our-story-container .inner-container:after {
   content: "";
   display: table; }
 
-.clearfix:after {
+.clearfix:after, .l-our-story-container .inner-container:after {
   clear: both; }
 
 .truncate {
@@ -144,8 +151,7 @@ a {
   display: inline-block; }
 
 .l-header-container {
-  background-image: url("../i/header-bg.png");
-  min-height: 670px; }
+  background-image: url("../i/header-bg.png"); }
   .l-header-container .l-header-top--logo {
     padding-top: 20px; }
   .l-header-container .l-navbar {
@@ -185,7 +191,8 @@ a {
     .l-header-container .l-header-bottom .dots {
       max-width: 60px;
       max-height: 10px;
-      display: inline-block; }
+      display: inline-block;
+      margin-bottom: 70px; }
       .l-header-container .l-header-bottom .dots .dot {
         float: left;
         display: inline-block;
@@ -196,3 +203,80 @@ a {
         border-radius: 50%; }
         .l-header-container .l-header-bottom .dots .dot.current {
           background-color: #00e0d0; }
+
+.l-our-story-container {
+  background-color: #fff;
+  padding: 70px 0; }
+  .l-our-story-container .inner-container .l-left-side {
+    float: left;
+    display: block;
+    margin-right: 100px;
+    margin-top: 15px; }
+  .l-our-story-container .inner-container .l-right-side {
+    display: block;
+    overflow: hidden; }
+    .l-our-story-container .inner-container .l-right-side .l-right-side--header {
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      font-size: 22px;
+      margin-bottom: 30px; }
+    .l-our-story-container .inner-container .l-right-side .l-right-side--text {
+      font-size: 14px;
+      color: #817f86;
+      font-weight: 400;
+      margin-bottom: 35px; }
+
+.l-video-container {
+  background-image: url("../i/video-bg.png");
+  text-align: center;
+  padding: 200px 0; }
+  .l-video-container .caption {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 30px; }
+
+.l-expertise {
+  padding: 70px 0;
+  text-align: center; }
+  .l-expertise .l-expertise--top .text-big {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 15px; }
+  .l-expertise .l-expertise--top .text-small {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #817f86;
+    margin-bottom: 15px; }
+  .l-expertise .divider {
+    display: inline-block;
+    width: 50px;
+    border-bottom: 2px solid  #c6c4c9; }
+  .l-expertise .l-expertise--bottom {
+    display: table; }
+    .l-expertise .l-expertise--bottom .row {
+      display: table-row; }
+      .l-expertise .l-expertise--bottom .row:last-child .item {
+        border-bottom: 0; }
+    .l-expertise .l-expertise--bottom .item {
+      display: table-cell;
+      text-align: center;
+      padding: 40px 30px;
+      border-bottom: 1px solid #ebebeb;
+      border-right: 1px solid #ebebeb;
+      vertical-align: top; }
+      .l-expertise .l-expertise--bottom .item:last-child {
+        border-right: 0; }
+      .l-expertise .l-expertise--bottom .item .pictogram {
+        min-height: 60px; }
+      .l-expertise .l-expertise--bottom .item .item-text-big {
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 30px; }
+      .l-expertise .l-expertise--bottom .item .item-text-small {
+        font-size: 14;
+        font-weight: 300;
+        color: #817f86;
+        margin-top: 25px; }

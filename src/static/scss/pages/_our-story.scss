@@ -1,0 +1,34 @@
+.l-our-story-container {
+  background-color: #fff;
+  padding: 70px 0;
+
+  .inner-container {
+    @extend .clearfix;
+
+    .l-left-side {
+      float: left;
+      display: block;
+      margin-right: 100px;
+      margin-top: 15px;
+    }
+
+    .l-right-side {
+      display: block;
+      overflow: hidden;
+
+      .l-right-side--header {
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        font-size: 22px;
+        margin-bottom: 30px;
+      }
+
+      .l-right-side--text {
+        font-size: 14px;
+        color: #817f86;
+        font-weight: 400;
+        margin-bottom: 35px;
+      }
+    }
+  }  
+}
