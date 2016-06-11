@@ -1,0 +1,49 @@
+.l-our-works {
+  text-align: center;
+  padding: 70px 0;
+
+  .top {
+    @extend .clearfix;
+    
+    .text {
+      font-family: 'Playfair Display', serif;
+      font-size: 16px;
+      font-weight: bold;
+      color: #413d4b;
+      float: left;
+    }
+
+    .see-all {
+      font-size: 14px;
+      font-weight: 300;
+      color: #413d4b;
+      display: block;
+      float: right;
+      position: relative;
+
+      &:after {
+        @extend .icon-arrow-r;
+        @extend .icon;
+        content: '';
+        position: absolute;
+        top: 3px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .picset {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 70px 0;
+
+    .picset-item {
+      height: 200px;
+      width: (100%/6);
+      flex-grow: 1;
+      border: 1px solid #ccc;
+      background-color: #e0e0e0;
+    }
+  }
+
+}

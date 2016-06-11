@@ -1,0 +1,82 @@
+.l-team {
+  background-image: url('../i/meet-our-team-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 70px 0;
+
+  .l-team--top {
+    .text-big {
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    .text-small {
+      font-family: 'Playfair Display', serif;
+      font-size: 14px;
+      color: #fff;
+      margin-bottom: 15px;      
+    }
+  }
+
+  .divider {
+    display: inline-block;
+    width: 50px;
+    border-bottom: 2px solid  #655d80;
+    margin-bottom: 45px;
+  }
+
+  .l-team--bottom {
+
+    .thumbnails {
+      margin-bottom: 70px;
+    }
+
+    .thumbnails-item {
+      display: inline-block;
+      padding-right: 20px;
+
+      &:last-child {
+        padding: 0;
+      }
+
+      a, span {
+        display: block;
+        color: #fff;
+      }
+
+      .pic-placeholder {
+        width: 220px;
+        height: 230px;
+        background-color: #fff;
+      }
+
+      .caption {
+        border: 1px solid  #7b7890;
+        padding: 20px 0;
+
+        .text-big {
+          font-size: 13px;
+        }
+
+        .text-small {
+          font-size: 13px;
+          font-weight: lighter;
+        }
+      }
+    }
+
+    .text {
+      font-size: 14px;
+      font-weight: 300;
+      color: #fff;
+    }
+
+    .apply {
+      margin-top: 30px;
+    }
+  }
+}

@@ -1,6 +1,8 @@
 .l-video-container {
   background-image: url('../i/video-bg.png');
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 200px 0;
 
   .caption {

@@ -1,5 +1,7 @@
 .l-header-container {
   background-image: url('../i/header-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 
 .l-header-top--logo {
   padding-top: 20px;
@@ -11,12 +13,16 @@
   font-weight: bold;
 
   .l-navbar--item {
-      display: inline;
+      display: inline-block;
+      margin-right: 25px;
       
       a {
         font-size: 13px;
         color: #fff;
-        margin-right: 25px;
+      }
+
+      &:last-child{
+        margin-right: 0;;
       }
 
     &.active {

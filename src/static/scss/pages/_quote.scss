@@ -1,0 +1,40 @@
+.l-quote {
+  background-image: url('../i/quote-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 70px 0;
+
+  .text {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    color: #fff;
+    margin: 40px 0;
+  }
+
+  .name {
+    font-size: 14px;
+    color: #fff;
+    margin: 10px 0;
+  }
+
+  .title {
+    font-size: 13px;
+    font-weight: lighter;
+    color: #fff;
+    margin-bottom: 45px;
+  }
+
+  .slider {
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 480px;
+    margin: 0 auto;
+
+    & div {
+      margin: 0 15px;
+    }
+  }
+}

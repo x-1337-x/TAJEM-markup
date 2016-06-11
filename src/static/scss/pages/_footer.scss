@@ -1,0 +1,125 @@
+.l-footer {
+  background-image: url('../i/footer-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 70px 0;
+
+  .upper {
+    display: block;
+    @extend .clearfix;
+
+    & > div {
+      float: left;
+      width: 290px;
+      text-align: initial;
+      vertical-align: top;
+    }
+    
+    .description {
+      margin-right: 35px;
+    }
+
+    .address {
+      margin-right: 35px;
+    }
+
+    .header {
+      font-size: 15px;
+      font-weight: bold;
+      color: #fff;
+      margin: 20px 0;
+    }
+
+    .send-btn {
+      display: block;
+      width: 70px;
+      height: 45px;
+      background-color: #a199b3;
+      opacity: 0.5;
+      text-align: center;
+      vertical-align: middle;
+      padding: 10px 0;
+    }
+    
+    input {
+      height: 45px;
+      width: 210px;
+      background-color: transparent;
+      border: 1px solid #a199b3;
+      padding: 15px;
+      margin-right: 5px;
+    }
+
+    .text {
+      font-size: 14px;
+      line-height: 25px;
+      color: #fff;
+      font-weight: 300;
+    }
+
+    #address {
+      position: relative;
+      margin-left: 30px;
+      &:before {
+        @extend .icon-location;
+        @extend .icon;
+        content: '';
+        position: absolute;
+        left: -30px;
+        top: 4px;
+      }
+    }
+
+    #phone {
+      position: relative;
+      margin-left: 30px;
+      &:before {
+        @extend .icon-phone-receiver;
+        @extend .icon;
+        content: '';
+        position: absolute;
+        left: -30px;
+      }
+    }
+
+    .subscribe > * {
+      display: inline-block;
+    }
+
+    .soc-ntwks {
+      margin-top: 25px;
+
+      & > * {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .lower {
+    display: block;
+    width: 100%;
+    margin-top: 70px;
+
+    a {
+      font-size: 14px;
+      color: #fff;
+      margin-right: 30px;
+    }
+
+    .l-footer-navbar {
+      display: inline-block;
+      float: left;
+      .l-navbar--item {
+        display: inline;
+      }
+    }
+
+    .copyright {
+      display: inline-block;
+      float: right;
+      color: #fff;
+      padding-right: 22px;
+    }
+  }
+}
