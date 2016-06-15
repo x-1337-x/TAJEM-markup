@@ -1,0 +1,25 @@
+.l-navbar {
+  font-weight: bold;
+  float: right;
+  padding-top: 15px;
+
+  .l-navbar--item {
+      display: inline-block;
+      margin-right: 25px;
+      
+      a {
+        font-size: 13px;
+        color: #fff;
+      }
+
+      &:last-child{
+        margin-right: 0;;
+      }
+
+    &.active {
+      a {
+        color: $btn-color;
+      }
+    }
+  }
+}

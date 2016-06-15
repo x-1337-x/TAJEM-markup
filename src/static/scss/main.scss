@@ -9,12 +9,20 @@
 
 @import './components/components';
 
+@import './pages/navbar';
 @import './pages/header';
 @import './pages/our-story';
 @import './pages/video-container';
 @import './pages/expertise';
-@import './pages/team';
+@import './pages/team'; 
 @import './pages/our-works';
 @import './pages/quote';
 @import './pages/contact';
 @import './pages/footer';
+
+@import '../../../bower_components/slick-carousel/slick/slick.css';
+@import '../../../bower_components/slick-carousel/slick/slick-theme.css';
+
+@import '../../../bower_components/fancyBox/source/jquery.fancybox.css';
+
+@import './vendors/slick-theme-override';

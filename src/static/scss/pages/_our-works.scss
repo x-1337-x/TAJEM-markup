@@ -20,6 +20,7 @@
       display: block;
       float: right;
       position: relative;
+      padding-right: 10px;
 
       &:after {
         @extend .icon-arrow-r;
@@ -43,6 +44,7 @@
       flex-grow: 1;
       border: 1px solid #ccc;
       background-color: #e0e0e0;
+      overflow: hidden;
     }
   }
 

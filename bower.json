@@ -14,5 +14,8 @@
     "test",
     "tests"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "slick-carousel": "slick.js#^1.6.0",
+    "fancyBox": "^2.1.5"
+  }
 }
